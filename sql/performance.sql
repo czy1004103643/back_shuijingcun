@@ -668,3 +668,6 @@ case_total_time int not null,
 case_process double not null,
 case_update_time timestamp )
 charset = utf8;
+
+#同步数据库
+
