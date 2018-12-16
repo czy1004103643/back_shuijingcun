@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.SysUserRoleDao">
+    <select id="queryUserRoleFromUserIdAndModuleCode" resultType="INTEGER">
+       select id from tb_sys_user_role
+        WHERE
+        (roleId = #{roleId, jdbcType=INTEGER} AND moduleCode = #{moduleCode, jdbcType=VARCHAR})
+    </select>
+
+    <select id="queryIdFromRoleIdAndBackupsModuleCode" resultType="INTEGER">
+       select id from tb_sys_user_role
+        WHERE
+        (roleId = #{roleId, jdbcType=INTEGER} AND backupsModuleCode = #{backupsModuleCode, jdbcType=VARCHAR})
+    </select>
+
+    <select id="queryModuleCodeFromRoleIdAndBackupsModuleCode" resultType="STRING">
+       select moduleCode from tb_sys_user_role
+        WHERE
+        (roleId = #{roleId, jdbcType=INTEGER} AND backupsModuleCode = #{backupsModuleCode, jdbcType=VARCHAR})
+    </select>
+
+    <select id="queryIsModifiedFromRoleIdAndBackupsModuleCode" resultType="INTEGER">
+       select isModified from tb_sys_user_role
+        WHERE
+        (roleId = #{roleId, jdbcType=INTEGER} AND backupsModuleCode = #{backupsModuleCode, jdbcType=VARCHAR})
+    </select>
+
+    <select id="listSysUserRoleFromUserId" resultType="com.byd.performance_main.model.SysUserRoleBean">
+        select * from tb_sys_user_role where userId=#{userId, jdbcType=VARCHAR}
+
+    </select>
+
+    <select id="allSysUserRole" resultType="com.byd.performance_main.model.SysUserRoleBean">
+        select * from tb_sys_user_role
+    </select>
+
+    <update id="updateSysUserRole" parameterType="com.byd.performance_main.model.SysUserRoleBean">
+        update tb_sys_user_role set  isModified = #{isModified, jdbcType=VARCHAR} where  id = #{id, jdbcType=VARCHAR}
+
+    </update>
+
+    <update id="updateModuleCodeFromId" parameterType="com.byd.performance_main.model.SysUserRoleBean">
+        update tb_sys_user_role set  moduleCode = #{moduleCode, jdbcType=VARCHAR} where  id = #{id, jdbcType=VARCHAR}
+
+    </update>
+
+</mapper>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>MyDemo</title>
+</head>
+<body>
+<h1>Hello my Demo</h1>
+<br>
+
+<h1>Result</h1>
+<p th:text="'userId: ' + ${userBean.userId}+ '  111'"/>
+<p th:text="'userName: ' + ${userBean.userName}+ '  222'"/>
+<p th:text="'userPassword: ' + ${userBean.userPassword}+ '  333'"/>
+<a href="/index">Submit another message</a>
+
+</body>
+</html>

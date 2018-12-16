@@ -1,0 +1,46 @@
+{
+    "code": 0,
+    "detail": {
+        "historyData": [
+            {
+                "projectData": [
+                    {
+                        "projectLeader": "邹杰大伙10089",
+                        "projectScore": 22,
+                        "projectName": "呵呵小组"
+                    },
+                    {
+                        "projectLeader": "邹杰大伙10089",
+                        "projectScore": 32,
+                        "projectName": "我的项目2"
+                    }
+                ],
+                "ownScoreData": [
+                    {
+                        "ownScore": 56,
+                        "projectName": "呵呵小组"
+                    },
+                    {
+                        "ownScore": 12,
+                        "projectName": "我的项目2"
+                    }
+                ],
+                "allMemberScoreData": [],
+                "ownWeight": 50,
+                "groupWeight": 0,
+                "scoreTime": "2018-08",
+                "memberWeight": 0,
+                "userName": "邹杰小伙10088",
+                "userId": "10088",
+                "groupData": {
+                    "groupName": "邹杰大组",
+                    "groupScore": 0,
+                    "groupLeader": "邹杰大伙10089"
+                },
+                "totalScore": 30,
+                "projectWeight": 50
+            }
+        ]
+    },
+    "message": "后台已处理"
+}

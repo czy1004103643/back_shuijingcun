@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.GroupMemberDao">
+    <sql id="BASE_TABLE">
+    tb_group_member
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id,
+    groupName,
+    groupMember,
+    isLeader
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.GroupMemberBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            groupName,
+            groupMember,
+            <if test="isLeader != null">isLeader,</if>
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{groupName, jdbcType=INTEGER},
+            #{groupMember , jdbcType=VARCHAR},
+            <if test="isLeader != null">#{isLeader , jdbcType=INTEGER},</if>
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteGroupMemberFromGroupMember">
+        delete from tb_project_member where projectMember=id = #{deleteId, jdbcType=INTEGER}
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.GroupMemberBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <if test="groupName  != null">groupName = #{groupName , jdbcType=INTEGER},</if>
+            <if test="groupMember  != null">groupMember = #{groupMember , jdbcType=VARCHAR},</if>
+            <if test="isLeader  != null">isLeader = #{isLeader , jdbcType=INTEGER},</if>
+        </trim>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryIdFromGroupNameAndGroupMember" resultType="INTEGER">
+        SELECT
+        id
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        (groupName = #{groupName, jdbcType=INTEGER} AND groupMember = #{groupMember, jdbcType=VARCHAR})
+    </select>
+
+    <select id="queryIdFromGroupMember" resultType="INTEGER">
+        SELECT
+        id
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        (groupMember = #{groupMember, jdbcType=VARCHAR})
+    </select>
+
+    <select id="queryGroupMemberFromGroupName" resultType="java.lang.String">
+        SELECT
+        groupMember
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        groupName = #{groupName, jdbcType=INTEGER}
+        order by groupMember
+    </select>
+
+    <select id="queryGroupNameFromGroupMember" resultType="INTEGER">
+        SELECT
+        groupName
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        groupMember = #{groupMember, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryGroupNameLeader" resultType="java.lang.String">
+        SELECT
+        groupMember
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        groupName = #{groupName, jdbcType=INTEGER} AND isLeader = 1
+    </select>
+
+    <select id="queryGroupMemberRole" resultType="INTEGER">
+        SELECT
+        isLeader
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        groupMember = #{groupMember, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryAllGroupMemberBean" resultType="com.byd.performance_main.model.GroupMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+    <select id="checkoutIsLeaderFromGroupMember" resultType="INTEGER">
+        SELECT
+        isLeader
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        groupMember = #{groupMember, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryGroupMemberFromGroupNameAndRole" resultType="java.lang.String">
+        SELECT
+        groupMember
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        (groupName = #{groupName, jdbcType=INTEGER} AND isLeader = #{isLeader, jdbcType=INTEGER})
+    </select>
+
+    <select id="queryGroupMemberBeanFromGroupName" resultType="com.byd.performance_main.model.GroupMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        groupName = #{groupName, jdbcType=INTEGER} AND isLeader = 1
+    </select>
+
+    <select id="findGroupMemberBeanFromGroupMember" resultType="com.byd.performance_main.model.GroupMemberBean">
+        select * from tb_group_member where groupMember=#{deleteId,jdbcType=VARCHAR}
+
+    </select>
+
+
+</mapper>

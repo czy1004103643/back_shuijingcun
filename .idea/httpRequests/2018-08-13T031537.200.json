@@ -1,0 +1,40 @@
+{
+  "code": 0,
+  "detail": [
+    {
+      "all_group_members": [
+        {
+          "id": 1,
+          "isLeader": 1,
+          "groupMember": "admin",
+          "groupName": 1
+        },
+        {
+          "id": 2,
+          "isLeader": 0,
+          "groupMember": "3050803",
+          "groupName": 2
+        },
+        {
+          "id": 3,
+          "isLeader": 0,
+          "groupMember": "3050803",
+          "groupName": 2
+        },
+        {
+          "id": 4,
+          "isLeader": 0,
+          "groupMember": "3050803",
+          "groupName": 2
+        },
+        {
+          "id": 5,
+          "isLeader": 0,
+          "groupMember": "admin",
+          "groupName": 123
+        }
+      ]
+    }
+  ],
+  "message": "后台已处理"
+}

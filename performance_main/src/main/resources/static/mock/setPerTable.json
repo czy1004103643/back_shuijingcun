@@ -1,0 +1,26 @@
+{
+	"detail":
+        {
+            "perTable":[{
+                    "employeeLevel":"A",
+                    "projects":[{"projectRole":"超级权限","projectName":"管理员项目"}],
+                    "groupRole":"FGL",
+                    "groupName":"管理员小组",
+                    "userName":"admin",
+                    "userId":"admin"
+                }],
+            "userAvatar":"/static/image/avatar.jpg",
+            "historyData":{}
+        },
+    "data":{
+        "perTable":[{
+        "name":"张三",
+        "idNumber":"3100685",
+        "team":"李四组",
+        "role":"组员",
+        "project":[{"projectName":"项目一","pRole":"FO"},{"projectName":"项目二","pRole":"FGL"}],
+        "level":"F"
+        }],
+        "userImg":"@/assets/img/img.jpg"
+}
+}

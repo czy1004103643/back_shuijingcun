@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.ScoreWeightDao">
+    <sql id="BASE_TABLE">
+    tb_score_weight
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id, weightName, scoreValue
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.ScoreWeightBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            weightName,
+            scoreValue,
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{weightName, jdbcType=INTEGER},
+            #{scoreValue, jdbcType=INTEGER},
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.ScoreWeightBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            weightName = #{weightName,jdbcType=INTEGER},
+            scoreValue = #{scoreValue,jdbcType=INTEGER},
+        </trim>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <update id="updateWeightNameFromValue">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            scoreValue = #{scoreValue,jdbcType=INTEGER},
+        </trim>
+        WHERE
+        weightName = #{weightName, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryScoreValueFromWeightName" resultType="INTEGER">
+        SELECT
+        scoreValue
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        weightName = #{weightName, jdbcType=INTEGER}
+    </select>
+
+    <select id="queryScoreWeightBean" resultType="com.byd.performance_main.model.ScoreWeightBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+</mapper>

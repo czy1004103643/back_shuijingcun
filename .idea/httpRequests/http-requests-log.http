@@ -1,0 +1,230 @@
+POST 10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST http://10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+<> 2018-12-07T051422.400.json
+
+###
+
+POST http://10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+<> 2018-12-07T051313.400.json
+
+###
+
+POST http://10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+<> 2018-12-07T051258.400.json
+
+###
+
+POST http://10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST http://10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST http://10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST 10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST 10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST 10.4.0.190:8086/api/example/userlogin?emp_id=666666&pass=666666
+X-API-KEY: TEST@123
+
+###
+
+POST 10.4.0.190:8086/api/example/userlogin?X-API-KEY=TEST@123&emp_id=666666&pass=666666
+
+###
+
+POST http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T044407.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042817.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042816.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042815.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042813.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042805.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042801.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042800.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042759.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+
+<> 2018-12-07T042715.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo?cookie=byd_performance=444_1544079848052
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-07T042511.200.json
+
+###
+
+GET http://localhost:8081/Validation/roleInfo
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-07T042405.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?cookie=byd_performance=admin_1533285503021&groupName=12456&groupMember=13gdg的
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T032248.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?cookie=byd_performance=admin_1533285503021&groupName=12456&groupMember=23g
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T032237.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T032134.200.json
+
+###
+
+GET http://localhost:8081/group-member/all?cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031537.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?projectName=6&projectMember=124gd&cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031453.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?projectName=6&projectMember=124gd&cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031417.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?projectName=6&projectMember=我反馈都&cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031407.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?projectName=6&projectMember=woshi我反馈都&cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031331.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?projectName=6&projectMember=woshi我反馈都&cookie=byd_performance=admin_1533285503021
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031300.200.json
+
+###
+
+POST http://localhost:8081/group-member/add?projectName=6&projectMember=woshi我反馈都
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031230.200.json
+
+###
+
+POST http://localhost:8081/resources?projectName=6&projectMember=woshi我反馈都
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-08-13T031217.404.html
+
+###
+
+POST http://localhost:8080/resources?projectName=6&projectMember=woshi我反馈都
+Accept: */*
+Cache-Control: no-cache
+
+###
+

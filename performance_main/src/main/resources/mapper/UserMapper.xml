@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.UserDao">
+    <sql id="BASE_TABLE">
+    tb_user
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id, userId, userName, userPassword, employeeLevel, userAvatar, userCookie, userRole,  createrId, createtime
+  </sql>
+
+    <update id="updateUserRole" parameterType="com.byd.performance_main.model.UserBean">
+        update tb_user set userRole=#{userRole, jdbcType=INTEGER} where userId=#{userId,jdbcType=VARCHAR}
+    </update>
+
+    <update id="updatePassword" parameterType="com.byd.performance_main.model.UserBean">
+        update tb_user set userPassword=#{userPassword, jdbcType=INTEGER} where userId=#{userId,jdbcType=VARCHAR}
+    </update>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.UserBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">userId,</if>
+            <if test="userName != null">userName,</if>
+            <if test="userPassword != null">userPassword,</if>
+            employeeLevel,
+            <if test="userAvatar != null">userAvatar,</if>
+            userCookie,
+            userRole,
+            createrId,
+            createtime,
+        </trim>
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId, jdbcType=VARCHAR},</if>
+            <if test="userName != null">#{userName, jdbcType=VARCHAR},</if>
+            <if test="userPassword != null">#{userPassword, jdbcType=VARCHAR},</if>
+            #{employeeLevel, jdbcType=VARCHAR},
+            <if test="userAvatar != null">#{userAvatar, jdbcType=VARCHAR},</if>
+            #{userCookie, jdbcType=VARCHAR},
+            #{userRole, jdbcType=INTEGER},
+            #{createrId, jdbcType=VARCHAR},
+            NOW(),
+        </trim>
+    </insert>
+
+    <select id="queryPasswordFromUserId" resultType="String">
+        SELECT
+        userPassword
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </select>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=INTEGER}
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.UserBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <if test="userId != null">userId = #{userId, jdbcType=VARCHAR},</if>
+            <if test="userName != null">userName = #{userName, jdbcType=VARCHAR},</if>
+            <if test="userPassword != null">userPassword = #{userPassword, jdbcType=VARCHAR},</if>
+            <if test="employeeLevel != null">employeeLevel, = #{employeeLevel,, jdbcType=VARCHAR},</if>
+            <if test="userAvatar != null">userAvatar, = #{userAvatar,, jdbcType=VARCHAR},</if>
+            <if test="userCookie != null">userCookie = #{userCookie, jdbcType=VARCHAR},</if>
+            <if test="userRole != null">userRole = #{userRole, jdbcType=VARCHAR},</if>
+            <if test="createrId != null">createrId = #{createrId, jdbcType=VARCHAR},</if>
+        </trim>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </update>
+
+    <select id="adminUser" resultType="com.byd.performance_main.model.UserBean">
+        select * from tb_user where userRole=#{userRole, jdbcType=INTEGER}
+    </select>
+
+    <select id="queryUserBean" resultType="com.byd.performance_main.model.UserBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        order by userId
+    </select>
+
+    <select id="queryUserIdFromCookie" resultType="String">
+        SELECT
+        userId
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userCookie = #{userCookie, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryUserFromUserId" resultType="com.byd.performance_main.model.UserBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryUserFromUserName" resultType="com.byd.performance_main.model.UserBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userName = #{userName, jdbcType=VARCHAR}
+        order by userId
+    </select>
+
+
+</mapper>

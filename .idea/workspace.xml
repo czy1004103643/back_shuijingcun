@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="performance_main:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13733c21-b494-4795-9b7d-c9a0fc97cf7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bpa5jn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bpa5jn.pub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid12368.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid13632.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid15928.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid17488.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid18860.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid18948.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid2008.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.000c75c770842cf94dca674f3fe76975.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.000c75c770842cf94dca674f3fe76975.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.3472fbc7943719cd4dede56422fd8117.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.3472fbc7943719cd4dede56422fd8117.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.3549ed6805f370ce545c3c749d91a1b9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.3549ed6805f370ce545c3c749d91a1b9.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.59b4a9191d3e5e867a81d9c47afa72bc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.59b4a9191d3e5e867a81d9c47afa72bc.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.5f8e85894cf09f15225edf19174fe9b2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.5f8e85894cf09f15225edf19174fe9b2.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.7411951553dc48cee6dcacfabbf0fdd5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.7411951553dc48cee6dcacfabbf0fdd5.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.7f63dd279f2071f4a844dbf075b5f515.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.7f63dd279f2071f4a844dbf075b5f515.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.98068f6194430dc9d0aad018a9c7e162.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.98068f6194430dc9d0aad018a9c7e162.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.9ef468bfd475cd6f38dcd52e684773d4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.9ef468bfd475cd6f38dcd52e684773d4.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.ab0d563f06561d56a00728cf5c8e0728.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.ab0d563f06561d56a00728cf5c8e0728.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.ee14a4f69587208cea790cc7877bc88e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.ee14a4f69587208cea790cc7877bc88e.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.f1a2e7af7fc30842297cc380c163beba.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.f1a2e7af7fc30842297cc380c163beba.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.f8740839459a6330db8c21fb78ac9810.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.f8740839459a6330db8c21fb78ac9810.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/fonts/element-icons.6f0a763.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.0a0d6acfa3e1c87e4db4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.0a0d6acfa3e1c87e4db4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.543ae5d36559cf9e744c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.543ae5d36559cf9e744c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.5ae4f25d8ee7fc8375f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.5ae4f25d8ee7fc8375f7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.6e57bc9ffccb9251279f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.6e57bc9ffccb9251279f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.75926848bf5cb8c934a5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.75926848bf5cb8c934a5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.88e2e70a841cd41a9e4b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.88e2e70a841cd41a9e4b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.9d3823da589efd68679e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.9d3823da589efd68679e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.a7ec4759ed1b8fa77b25.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.a7ec4759ed1b8fa77b25.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.accf89aaae72ed6cec6c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.accf89aaae72ed6cec6c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.bd872f7039644f941157.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.bd872f7039644f941157.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.c5bb5fa4a90475e24e72.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.c5bb5fa4a90475e24e72.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.f355579d3a48db78ceb8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.f355579d3a48db78ceb8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.ff5c54c56cd4e97bc514.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/app.ff5c54c56cd4e97bc514.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/manifest.2ae2e69a05c33dfc65f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/vendor.024dfd1a4c46a17d7e18.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/vendor.024dfd1a4c46a17d7e18.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/vendor.c21e127eb23085ce453b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/vendor.c21e127eb23085ce453b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/vendor.d47016a14f6074e1ff46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/static/js/vendor.d47016a14f6074e1ff46.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_main/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/replay_pid13632.log" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/performance_main/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/performance_utils/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mytest@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mytest@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="performance" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="mapper" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setProjectMemberScoreJson</find>
+      <find>/member-scored/group-info</find>
+      <find>groupNameFromGroupMembers</find>
+      <find>boss/</find>
+      <find>addManyScoreHistory</find>
+      <find>getCurrentProjectScoringMemberBeans</find>
+      <find>addProjectScoringMember</find>
+      <find>finalCalculateScoreResult</find>
+      <find>/group/group-update-member</find>
+      <find>/project/project-update-member</find>
+      <find>/member-scored/project-info</find>
+      <find>/score-history/person-info</find>
+      <find>leader-scoring/</find>
+      <find>score_w</find>
+      <find>member-scored/project-info</find>
+      <find>findGroupNameLeader</find>
+      <find>/boss/info</find>
+      <find>findProjectMemberFromProjectName</find>
+      <find>group/create</find>
+      <find>userManagement/query</find>
+      <find>yourself/information</find>
+      <find>leader-scoring/group-score-submit</find>
+      <find>checkModifiedPermission</find>
+      <find>score-weight/all</find>
+      <find>leader-scoring/project-score-submit</find>
+      <find>leader-scoring/info</find>
+      <find>project/project-update-member</find>
+      <find>score-history/person-info</find>
+      <find>findAllScheduleFromProjectName</find>
+      <find>member-scored/group-info</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\workspace\byd_performance_backend\performance_main\src\main\java\com\byd\performance_main</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/exception/PermissionDeniedException.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/code/ProjectRoleCode.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/ProjectScoringMemberService.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/dao/ProjectScoringMemberDao.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/impl/ProjectScoringMemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/resources/mapper/ProjectScoringMemberMapper.xml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/resources/mapper/ProjectMemberMapper.xml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/impl/ProjectMemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/dao/ProjectMemberDao.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/UserService.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/resources/mapper/ScoreHistoryMapper.xml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/model/ScoreHistoryBean.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/model/GroupScoringMemberBean.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/resources/mapper/GroupScoringMemberMapper.xml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/ProjectMemberService.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/utils/CommonMethod.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/exception/UserIdInvalid.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/code/SysRoleCode.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/code/SysMenuCode.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/UserManagementController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/ScoredStateController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/GroupController.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/code/ScoreWeightNameCode.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/ScoreWeightSettingController.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/code/StateCode.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderScoringMemberController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/ProjectController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/PermissionValidation.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/GetScoreHistoryController.java" />
+        <option value="$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/exception/ParamInvalidException.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/model/ScheduleBean.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/ScheduleController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/ScheduleService.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/dao/ScheduleDao.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/base/BaseController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/impl/ScheduleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/PerformanceMainApplication.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/RestTemlateConfig.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/SpringRestTemplateController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/HttpTest.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/HttpClient.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/resources/mapper/ScheduleMapper.xml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/YourselfWriteController.java" />
+        <option value="$PROJECT_DIR$/sql/performance.sql" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/MemberScoredByLeaderShowController.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/CommonAccount.java" />
+        <option value="$PROJECT_DIR$/performance_main/pom.xml" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/HttpClient4.java" />
+        <option value="$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LoginController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\workspace\repository_other" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="performance_main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="performance_main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="15" />
+    <option name="y" value="30" />
+    <option name="width" value="1890" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="common_control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="performance_main" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+              <item name="using" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="performance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="byd_performance_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544770248175" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../common-employee-database-with-rest-api" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.08741259" />
+    <property name="project.structure.side.proportion" value="0.45167464" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources\static" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources\templates" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources\static\css" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources\static\image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vue\byd_performance_backend\performance_main\src\main\resources\static" />
+      <recent name="D:\vue\byd_performance_backend\performance_main\src\main\resources\templates" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources\templates" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources\static" />
+      <recent name="D:\workspace\byd_performance_backend\performance_main\src\main\resources" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1544181218000" />
+                <option name="domain" value="10.4.0.190" />
+                <option name="name" value="bydcomempdb" />
+                <option name="path" value="/" />
+                <option name="value" value="q57amtftl65ckqtl5kcucqqg3lqvk2n9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://10.4.0.190:8086" />
+          <option name="urlPath" value="/api/example/userlogin" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="X-API-KEY" />
+                <option name="value" value="TEST@123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="emp_id" />
+                <option name="value" value="666666" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="666666" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://10.4.0.190:8086" />
+          <option name="urlPath" value="/api/example/userlogin" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="X-API-KEY" />
+                <option name="value" value="TEST@123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="emp_id" />
+                <option name="value" value="666666" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="666666" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="Validation/roleInfo" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="cookie" />
+                <option name="value" value="byd_performance=444_1544079848052" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="Validation/roleInfo" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="cookie" />
+                <option name="value" value="byd_performance=444_1544079848052" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/Validation/roleInfo" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="cookie" />
+                <option name="value" value="byd_performance=444_1544079848052" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/Validation/roleInfo" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="cookie" />
+                <option name="value" value="byd_performance=444_1544079848052" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/Validation/roleInfo" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="PerformanceMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="performance_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.byd.performance_main.PerformanceMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13733c21-b494-4795-9b7d-c9a0fc97cf7c" name="Default Changelist" comment="" />
+      <created>1536722683123</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536722683123</updated>
+      <workItem from="1536722687229" duration="4458000" />
+      <workItem from="1536735906033" duration="16000" />
+      <workItem from="1536737205164" duration="2519000" />
+      <workItem from="1536742802649" duration="1794000" />
+      <workItem from="1536799226051" duration="11737000" />
+      <workItem from="1536817992801" duration="32650000" />
+      <workItem from="1537239002842" duration="5676000" />
+      <workItem from="1537248474493" duration="20000" />
+      <workItem from="1537248782740" duration="14993000" />
+      <workItem from="1537323805104" duration="218000" />
+      <workItem from="1537326709316" duration="913000" />
+      <workItem from="1537340377671" duration="18065000" />
+      <workItem from="1539051582257" duration="2318000" />
+      <workItem from="1539054678399" duration="293000" />
+      <workItem from="1539054998866" duration="3561000" />
+      <workItem from="1539063017492" duration="1935000" />
+      <workItem from="1539065206144" duration="6621000" />
+      <workItem from="1539074593243" duration="1811000" />
+      <workItem from="1539076433761" duration="755000" />
+      <workItem from="1539133548527" duration="20055000" />
+      <workItem from="1539222763201" duration="22867000" />
+      <workItem from="1539304789087" duration="13614000" />
+      <workItem from="1539325119386" duration="2066000" />
+      <workItem from="1539327233163" duration="27000" />
+      <workItem from="1539581701336" duration="1999000" />
+      <workItem from="1539583754587" duration="5866000" />
+      <workItem from="1539590999143" duration="3000" />
+      <workItem from="1539591066805" duration="3742000" />
+      <workItem from="1539651957556" duration="14741000" />
+      <workItem from="1539679428607" duration="2664000" />
+      <workItem from="1539736734872" duration="6881000" />
+      <workItem from="1539759602745" duration="2766000" />
+      <workItem from="1539763069212" duration="223000" />
+      <workItem from="1539763513242" duration="681000" />
+      <workItem from="1539764576595" duration="1625000" />
+      <workItem from="1539843855342" duration="239000" />
+      <workItem from="1539851003980" duration="2086000" />
+      <workItem from="1539909728342" duration="6840000" />
+      <workItem from="1539929477772" duration="8030000" />
+      <workItem from="1540169890586" duration="3741000" />
+      <workItem from="1540174227433" duration="2667000" />
+      <workItem from="1540176943460" duration="12527000" />
+      <workItem from="1540195908885" duration="4359000" />
+      <workItem from="1540256812910" duration="22746000" />
+      <workItem from="1540341797237" duration="9816000" />
+      <workItem from="1540351909316" duration="1511000" />
+      <workItem from="1540359954853" duration="3249000" />
+      <workItem from="1540365599150" duration="6870000" />
+      <workItem from="1540449045335" duration="2251000" />
+      <workItem from="1540453271155" duration="3482000" />
+      <workItem from="1540459878981" duration="159000" />
+      <workItem from="1540514586553" duration="56000" />
+      <workItem from="1540518730079" duration="636000" />
+      <workItem from="1540779984028" duration="5098000" />
+      <workItem from="1540790693363" duration="5563000" />
+      <workItem from="1540866341490" duration="15043000" />
+      <workItem from="1540891539649" duration="39000" />
+      <workItem from="1540947028643" duration="15607000" />
+      <workItem from="1540973201170" duration="1273000" />
+      <workItem from="1541043181778" duration="11611000" />
+      <workItem from="1541123842410" duration="3620000" />
+      <workItem from="1542014741008" duration="55000" />
+      <workItem from="1542090613984" duration="616000" />
+      <workItem from="1542091384652" duration="7566000" />
+      <workItem from="1542160313674" duration="14258000" />
+      <workItem from="1542244408486" duration="19140000" />
+      <workItem from="1542273780838" duration="318000" />
+      <workItem from="1542330381875" duration="5499000" />
+      <workItem from="1542354239719" duration="300000" />
+      <workItem from="1542593375431" duration="4529000" />
+      <workItem from="1542603879327" duration="9304000" />
+      <workItem from="1542674270284" duration="4781000" />
+      <workItem from="1542782029778" duration="1720000" />
+      <workItem from="1542784137533" duration="6745000" />
+      <workItem from="1542848984916" duration="2610000" />
+      <workItem from="1542866612502" duration="619000" />
+      <workItem from="1542874493247" duration="365000" />
+      <workItem from="1542935345157" duration="4681000" />
+      <workItem from="1543214532754" duration="235000" />
+      <workItem from="1543219660153" duration="514000" />
+      <workItem from="1543308604373" duration="596000" />
+      <workItem from="1543309659674" duration="1321000" />
+      <workItem from="1543370010611" duration="1229000" />
+      <workItem from="1543390082445" duration="919000" />
+      <workItem from="1543393893809" duration="2749000" />
+      <workItem from="1543453805957" duration="4556000" />
+      <workItem from="1543473528972" duration="1706000" />
+      <workItem from="1543475390943" duration="5961000" />
+      <workItem from="1543799565930" duration="2602000" />
+      <workItem from="1543803718996" duration="11672000" />
+      <workItem from="1543827593192" duration="615000" />
+      <workItem from="1543829064641" duration="435000" />
+      <workItem from="1543885274145" duration="14038000" />
+      <workItem from="1543971842268" duration="5125000" />
+      <workItem from="1543994629190" duration="51000" />
+      <workItem from="1543994804746" duration="99000" />
+      <workItem from="1544072512481" duration="11788000" />
+      <workItem from="1544143724649" duration="2372000" />
+      <workItem from="1544151743993" duration="574000" />
+      <workItem from="1544153527598" duration="1241000" />
+      <workItem from="1544170492222" duration="3917000" />
+      <workItem from="1544410051676" duration="6313000" />
+      <workItem from="1544426481995" duration="1210000" />
+      <workItem from="1544490039043" duration="16553000" />
+      <workItem from="1544512870895" duration="7721000" />
+      <workItem from="1544661663446" duration="506000" />
+      <workItem from="1544665862284" duration="8023000" />
+      <workItem from="1544685195250" duration="648000" />
+      <workItem from="1544686579137" duration="3214000" />
+      <workItem from="1544749132813" duration="1437000" />
+      <workItem from="1544754594604" duration="11370000" />
+      <workItem from="1544770493396" duration="1254000" />
+      <workItem from="1544776230532" duration="939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="594992000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.32841328" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49829352" visible="true" weight="0.08811641" />
+      <window_info id="Structure" order="1" sideWeight="0.5019305" side_tool="true" weight="0.25303152" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5017065" side_tool="true" weight="0.25303152" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.5019305" side_tool="true" weight="0.25303152" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7097817" weight="0.32902032" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7773246" weight="0.15711646" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.29021826" side_tool="true" weight="0.5399645" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48205546" weight="0.24214418" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4995958" weight="0.3285968" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32931036" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4987874" weight="0.1651865" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="REST Client" order="16" visible="true" weight="0.47957373" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.44139045" />
+      <window_info anchor="right" id="Database" order="5" weight="0.015359742" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32983023" />
+      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.0978173" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31932095" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.76704544" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.80274856" weight="0.20071048" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.23295455" side_tool="true" weight="0.18347107" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49312854" weight="0.28063944" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4995958" weight="0.3285968" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32931036" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4987874" weight="0.1651865" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.44139045" />
+      <window_info anchor="right" id="Database" order="6" weight="0.016976556" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderScoringMemberController.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderScoringMemberController.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/YourselfWriteController.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/YourselfWriteController.java</url>
+          <line>199</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/MemberScoredByLeaderShowController.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderScoringMemberController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/dao/RolePermissionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1763">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/model/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/exception/UserIdInvalid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/exception/ExcelParseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_utils/src/main/java/com/byd/performance_utils/exception/ParamInvalidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/model/ScheduleBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/mapper/GroupMemberMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/handler/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/WebMvcConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/TransactionManagementConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/InitApplicationRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/PerformanceMainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="e#642#643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/SpringRestTemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/GetScoreHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/PersonalMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/ScheduleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="80" column="34" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/RestTemlateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/PermissionValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/HttpTest.java" />
+    <entry file="jar://$PROJECT_DIR$/../repository_other/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/ErrorPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../repository_other/org/springframework/spring-aop/5.0.7.RELEASE/spring-aop-5.0.7.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class" />
+    <entry file="jar://$PROJECT_DIR$/../repository_other/org/springframework/spring-core/5.0.7.RELEASE/spring-core-5.0.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/mapper/ScheduleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="16" column="88" lean-forward="true" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/dao/ScheduleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/ScheduleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/service/impl/ScheduleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/base/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="234" column="16" selection-start-line="234" selection-start-column="16" selection-end-line="234" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/performance.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="345" column="34" selection-start-line="345" selection-start-column="34" selection-end-line="345" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/static/css/app.3500abf71123c5d6dd5383d792b4e603.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/UserManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/YourselfWriteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/workspace/repository_other/org/springframework/spring-core/5.0.7.RELEASE/spring-core-5.0.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LeaderScoringMemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/MemberScoredByLeaderShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="126" column="145" selection-start-line="126" selection-start-column="145" selection-end-line="126" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/CommonAccount.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/workspace/repository_other/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="934" selection-start-line="934" selection-end-line="934" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/workspace/repository_other/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="988" column="13" lean-forward="true" selection-start-line="988" selection-start-column="13" selection-end-line="988" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/workspace/repository_other/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="884" selection-start-line="884" selection-end-line="884" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/workspace/repository_other/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/common_control/HttpClient4.java" />
+    <entry file="file://$PROJECT_DIR$/performance_main/src/main/java/com/byd/performance_main/control/using/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>performance_main:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21339713" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (performance_main)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21339713" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.50787765" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33271548" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>performance_main</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21339713" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: stax:stax-api:1.0.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28516746" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

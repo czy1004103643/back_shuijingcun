@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.UserPermissionDao">
+    <sql id="BASE_TABLE">
+    tb_user_permission
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id,
+    userId,
+    permissionAllCode
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.UserPermissionBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            userId,
+            <if test="permissionAllCode != null">permissionAllCode,</if>
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{userId, jdbcType=VARCHAR},
+            <if test="permissionAllCode != null">#{permissionAllCode , jdbcType=INTEGER},</if>
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.UserPermissionBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <!--<if test="userId != null">userId = #{userId,jdbcType=VARCHAR},</if>-->
+            <if test="permissionAllCode  != null">permissionAllCode = #{permissionAllCode , jdbcType=INTEGER},</if>
+        </trim>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </update>
+
+    <select id="queryOwnUserPermissionBeanFromUserId" resultType="com.byd.performance_main.model.UserPermissionBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryAllUserPermissionBean" resultType="com.byd.performance_main.model.UserPermissionBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+</mapper>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.GroupScoringMemberDao">
+    <sql id="BASE_TABLE">
+    tb_group_scoring_member
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id,
+    userId,
+    currentGroupName,
+    currentRole,
+    ratingUserId,
+    ratingUserRole,
+    weight,
+    score,
+    scoreTime,
+    updateTime
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.GroupScoringMemberBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            userId,
+            currentGroupName,
+            currentRole,
+            ratingUserId,
+            ratingUserRole,
+            weight,
+            score,
+            scoreTime,
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{userId, jdbcType=VARCHAR},
+            #{currentGroupName, jdbcType=VARCHAR},
+            #{currentRole, jdbcType=INTEGER},
+            #{ratingUserId, jdbcType=VARCHAR},
+            #{ratingUserRole, jdbcType=INTEGER},
+            #{weight, jdbcType=INTEGER},
+            #{score, jdbcType=INTEGER},
+            #{scoreTime, jdbcType=VARCHAR},
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteMany" parameterType="java.util.List">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE id
+        in
+        <foreach collection="list" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.GroupScoringMemberBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <if test="userId  != null">userId = #{userId , jdbcType=VARCHAR},</if>
+            <if test="currentGroupName  != null">currentGroupName = #{currentGroupName , jdbcType=VARCHAR},</if>
+            <if test="currentRole  != null">currentRole = #{currentRole , jdbcType=INTEGER},</if>
+            <if test="ratingUserId  != null">ratingUserId = #{ratingUserId , jdbcType=VARCHAR},</if>
+            <if test="ratingUserRole  != null">ratingUserRole = #{ratingUserRole , jdbcType=INTEGER},</if>
+            <if test="weight  != null">weight = #{weight , jdbcType=INTEGER},</if>
+            <if test="score  != null">score = #{score , jdbcType=INTEGER},</if>
+            <if test="scoreTime  != null">scoreTime = #{scoreTime , jdbcType=VARCHAR},</if>
+        </trim>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryGroupScoringMemberBeanFromUserId"
+            resultType="com.byd.performance_main.model.GroupScoringMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryGroupScoringMemberBeanFromUserIdAndTime"
+            resultType="com.byd.performance_main.model.GroupScoringMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR} AND scoreTime = #{scoreTime,jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryGroupScoringMemberBeansFromUserIdAndTime"
+            resultType="com.byd.performance_main.model.GroupScoringMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR} AND scoreTime = #{scoreTime,jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryGroupScoringMemberId"
+            resultType="com.byd.performance_main.model.GroupScoringMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR} AND currentGroupName = #{currentGroupName,jdbcType=VARCHAR} AND
+        ratingUserId = #{ratingUserId,jdbcType=VARCHAR} AND scoreTime = #{scoreTime,jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryAllGroupScoringMemberBean" resultType="com.byd.performance_main.model.GroupScoringMemberBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+</mapper>

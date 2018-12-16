@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.ScoreHistoryDao">
+    <sql id="BASE_TABLE">
+    tb_score_history
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id,
+    userId,
+    groupScore,
+    groupScoreWeight,
+    projectScore,
+    projectScoreWeight,
+    ownScore,
+    ownScoreWeight,
+    totalScore,
+    scoreTime,
+    updateTime
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.ScoreHistoryBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            userId,
+            <if test="groupScore != null">groupScore,</if>
+            <if test="groupScoreWeight != null">groupScoreWeight,</if>
+            <if test="projectScore != null">projectScore,</if>
+            <if test="projectScoreWeight != null">projectScoreWeight,</if>
+            <if test="ownScore != null">ownScore,</if>
+            <if test="ownScoreWeight != null">ownScoreWeight,</if>
+            <!--
+            <if test="memberAllScore != null">memberAllScore,</if>
+            <if test="memberAllScoreWeight != null">memberAllScoreWeight,</if>
+            -->
+            totalScore,
+            scoreTime,
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{userId, jdbcType=VARCHAR},
+            <if test="groupScore != null">#{groupScore, jdbcType=INTEGER},</if>
+            <if test="groupScoreWeight != null">#{groupScoreWeight, jdbcType=INTEGER},</if>
+            <if test="projectScore != null">#{projectScore, jdbcType=INTEGER},</if>
+            <if test="projectScoreWeight != null">#{projectScoreWeight, jdbcType=INTEGER},</if>
+            <if test="ownScore != null">#{ownScore, jdbcType=INTEGER},</if>
+            <if test="ownScoreWeight != null">#{ownScoreWeight, jdbcType=INTEGER},</if>
+            <!--
+            <if test="memberAllScore != null">#{memberAllScore, jdbcType=INTEGER},</if>
+            <if test="memberAllScoreWeight != null">#{memberAllScoreWeight, jdbcType=INTEGER},</if>
+            -->
+            #{totalScore, jdbcType=INTEGER},
+            #{scoreTime, jdbcType=VARCHAR},
+        </trim>
+    </insert>
+
+    <!--批量添加-->
+    <insert id="insertMany" parameterType="java.util.List" useGeneratedKeys="true">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            SELECT
+            LAST_INSERT_ID()
+        </selectKey>
+        insert INTO
+        <include refid="BASE_TABLE"/>
+        (
+        userId,
+        groupScore,
+        groupScoreWeight,
+        projectScore,
+        projectScoreWeight,
+        ownScore,
+        ownScoreWeight,
+        totalScore,
+        scoreTime
+        )
+        values
+        <foreach collection="list" item="params" index="index" separator=",">
+            (
+            #{params.userId, jdbcType=VARCHAR},
+            #{params.groupScore, jdbcType=INTEGER},
+            #{params.groupScoreWeight, jdbcType=INTEGER},
+            #{params.projectScore, jdbcType=INTEGER},
+            #{params.projectScoreWeight, jdbcType=INTEGER},
+            #{params.ownScore, jdbcType=INTEGER},
+            #{params.ownScoreWeight, jdbcType=INTEGER},
+            #{params.totalScore, jdbcType=INTEGER},
+            #{params.scoreTime, jdbcType=VARCHAR}
+            )
+        </foreach>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteMany" parameterType="java.util.List">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE id
+        in
+        <foreach collection="list" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.ScoreHistoryBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <if test="userId  != null">userId = #{userId , jdbcType=VARCHAR},</if>
+            <if test="groupScore  != null">groupScore = #{groupScore , jdbcType=INTEGER},</if>
+            <if test="groupScoreWeight  != null">groupScoreWeight = #{groupScoreWeight , jdbcType=INTEGER},</if>
+            <if test="projectScore  != null">projectScore = #{projectScore , jdbcType=INTEGER},</if>
+            <if test="projectScoreWeight  != null">projectScoreWeight = #{projectScoreWeight , jdbcType=INTEGER},</if>
+            <if test="ownScore  != null">ownScore = #{ownScore , jdbcType=INTEGER},</if>
+            <if test="ownScoreWeight  != null">ownScoreWeight = #{ownScoreWeight , jdbcType=INTEGER},</if>
+            <!--
+            <if test="memberAllScore  != null">memberAllScore = #{memberAllScore , jdbcType=INTEGER},</if>
+            <if test="memberAllScoreWeight  != null">memberAllScoreWeight =
+                #{memberAllScoreWeight , jdbcType=INTEGER},
+            </if>-->
+            <if test="totalScore  != null">totalScore = #{totalScore , jdbcType=INTEGER},</if>
+            <if test="scoreTime  != null">scoreTime = #{scoreTime , jdbcType=VARCHAR},</if>
+        </trim>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryScoreHistoryBeanFromUserId" resultType="com.byd.performance_main.model.ScoreHistoryBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryScoreHistoryBeanFromUserIdAndScoreTime"
+            resultType="com.byd.performance_main.model.ScoreHistoryBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR} AND scoreTime = #{scoreTime , jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryAllScoreHistoryBean" resultType="com.byd.performance_main.model.ScoreHistoryBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+</mapper>

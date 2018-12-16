@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.ProjectOwnScoringDao">
+    <sql id="BASE_TABLE">
+    tb_project_own_score
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id,
+    userId,
+    currentProjectName,
+    userRole,
+    workContent,
+    weight,
+    score,
+    scoreTime,
+    updateTime
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            userId,
+            currentProjectName,
+            userRole,
+            workContent,
+            weight,
+            score,
+            scoreTime,
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{userId, jdbcType=VARCHAR},
+            #{currentProjectName, jdbcType=VARCHAR},
+            #{userRole, jdbcType=INTEGER},
+            #{workContent, jdbcType=VARCHAR},
+            #{weight, jdbcType=INTEGER},
+            #{score, jdbcType=INTEGER},
+            #{scoreTime, jdbcType=VARCHAR},
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <delete id="deleteMany" parameterType="java.util.List">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE id in
+        <foreach collection="list" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <if test="userId  != null">userId = #{userId , jdbcType=VARCHAR},</if>
+            <if test="currentProjectName  != null">currentProjectName = #{currentProjectName , jdbcType=VARCHAR},</if>
+            <if test="userRole  != null">userRole = #{userRole , jdbcType=INTEGER},</if>
+            <if test="workContent   != null">workContent = #{workContent  , jdbcType=VARCHAR},</if>
+            <if test="weight   != null">weight = #{weight  , jdbcType=INTEGER},</if>
+            <if test="score   != null">score = #{score  , jdbcType=INTEGER},</if>
+            <if test="scoreTime  != null">scoreTime = #{scoreTime , jdbcType=VARCHAR},</if>
+        </trim>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryProjectOwnScoringBeanFromUserId" resultType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryProjectOwnScoringBeanFromUserIdAndScoreTime"
+            resultType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR} and scoreTime = #{scoreTime, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryProjectOwnScoringBeanFromCurrentProjectNameAndScoreTime"
+            resultType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        currentProjectName = #{currentProjectName, jdbcType=VARCHAR}
+        and scoreTime = #{scoreTime, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryAllProjectOwnScoringBean" resultType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+    <select id="queryProjectOwnScoringBeanFromUserIdAndCurrentProjectNameAndScoreTime"
+            resultType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+        and currentProjectName = #{currentProjectName, jdbcType=VARCHAR}
+        and scoreTime = #{scoreTime, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryProjectOwnScoringBeansFromUserIdAndCurrentProjectNameAndScoreTime"
+            resultType="com.byd.performance_main.model.ProjectOwnScoringBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR}
+        and currentProjectName = #{currentProjectName, jdbcType=VARCHAR}
+        and scoreTime = #{scoreTime, jdbcType=VARCHAR}
+    </select>
+
+</mapper>

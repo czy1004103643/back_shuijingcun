@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.ScheduleDao">
+    <select id="findAllScheduleFromUserIdAndProjectName" resultType="com.byd.performance_main.model.ScheduleBean">
+        select * from tb_schedule
+        WHERE
+        userId = #{userId, jdbcType=VARCHAR} and project_name = #{project_name, jdbcType=VARCHAR}
+    </select>
+
+    <select id="findScheduleFromCaseId" resultType="com.byd.performance_main.model.ScheduleBean">
+        select * from tb_schedule
+        WHERE
+        case_id = #{case_id, jdbcType=VARCHAR}
+    </select>
+
+    <select id="findAllScheduleFromProjectName" resultType="com.byd.performance_main.model.ScheduleBean">
+        select * from tb_schedule where project_name= #{projectName, jdbcType=VARCHAR} ;
+    </select>
+
+    <insert id="addSchedule" parameterType="com.byd.performance_main.model.ScheduleBean">
+        insert into tb_schedule(case_id,userId,project_name,case_name,case_start_time,case_total_time,case_process,case_update_time)
+        values (#{case_id,jdbcType=VARCHAR},#{userId,jdbcType=VARCHAR},#{project_name,jdbcType=VARCHAR},#{case_name,jdbcType=VARCHAR}
+        ,#{case_start_time,jdbcType=VARCHAR},#{case_total_time,jdbcType=INTEGER},#{case_process,jdbcType=DOUBLE },now())
+    </insert>
+
+    <update id="updateSchedule">
+        update tb_schedule set case_name=#{case_name,jdbcType=VARCHAR},case_start_time=#{case_start_time,jdbcType=VARCHAR},
+        case_total_time=#{case_total_time,jdbcType=VARCHAR},case_process=#{case_process,jdbcType=VARCHAR},case_update_time=now()
+        where case_id=#{case_id,jdbcType=VARCHAR}
+    </update>
+
+    <delete id="deleteSchedule" parameterType="STRING">
+        DELETE FROM tb_schedule WHERE case_id=#{case_id,jdbcType=VARCHAR}
+    </delete>
+</mapper>

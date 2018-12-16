@@ -1,0 +1,88 @@
+{
+    "code": 0,
+    "detail": {
+        "projectData": [
+            {
+                "featureGroupName": "我的项目1",
+                "featureGroupLeader": {
+                        "userName": "邹杰小伙10088",
+                        "userId": "10088"
+                    }
+                ,
+                "featureGroupSPDM":  {
+                        "userName": "Wu",
+                        "userId": "180"
+                    }
+                ,
+                "featureGroupARC": {
+                        "userName": "Saly",
+                        "userId": "180"
+                },
+                "featureOwner": [
+                   {
+                        "userName": "邹杰小伙10086",
+                        "userId": "10086"
+                    },
+                    {
+                        "userName": "邹杰大伙10087",
+                        "userId": "10087"
+                    },
+                    {
+                        "userName": "我是tester",
+                        "userId": "10090"
+                    }
+                ]
+            },
+            {
+                "featureGroupName": "我的项目2",
+                "featureGroupLeader": 
+                    {
+                        "userName": "fgl",
+                        "userId": "192"
+                    }
+                ,
+                "featureGroupSPDM": 
+                    {
+                        "userName": "spdm",
+                        "userId": "181"
+                    }
+                ,
+                "featureGroupARC": {},
+                "featureOwner": []
+            },
+            {
+                "featureGroupName": "管理员项目",
+                "featureGroupLeader": 
+                    {
+                        "userName": "fgl",
+                        "userId": "201"
+                    }
+                ,
+                "featureGroupSPDM": 
+                    {
+                        "userName": "spdm",
+                        "userId": "180"
+                    }
+                ,
+                "featureGroupARC": {
+                    "userName": "spdm",
+                    "userId": "180"
+                },
+                "featureOwner": []
+            },
+            {
+                "featureGroupName": "项目3",
+                "featureGroupLeader": {},
+                "featureGroupSPDM": 
+                    {
+                        "userName": "spdm",
+                        "userId": "181"
+                    }
+                ,
+                "featureGroupARC": {},
+                "featureOwner": []
+            }
+        ]
+    },
+    "message": "后台已处理"
+}

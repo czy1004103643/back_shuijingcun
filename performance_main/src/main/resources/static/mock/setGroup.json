@@ -1,0 +1,13 @@
+{
+   "groupData":[{
+        "groupName":"张三组",
+        "groupLeader":{"idNumber":"555455","leaderName":"Gary"},
+        "groupMembers":[{"idNumber":"555455","memberName":"Lisa"},{"idNumber":"5554055","memberName":"Syse"}] 
+    },{
+        "groupName":"李四组",
+        "groupLeader":{"idNumber":"3453534","leaderName":"Green"},
+        "groupMembers":[{"idNumber":"8789879","memberName":"Lee"},{"idNumber":"31231","memberName":"Ray "}] 
+    },{
+        "groupName":"王五组"
+    }]
+}

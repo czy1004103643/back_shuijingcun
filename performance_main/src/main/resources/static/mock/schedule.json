@@ -1,0 +1,25 @@
+{
+    "code": 0,
+    "detail": {
+      "schedule":[
+        {
+          "projectName":"项目一",
+          "tasks": [
+            {"id": 1, "text": "Task #1", "start_date": "15-04-2017", "duration": 3, "progress": 0.6},
+            {"id": 2, "text": "Task #2", "start_date": "16-04-2017", "duration": 5, "progress": 0.3},
+            {"id": 3, "text": "Task #3", "start_date": "18-04-2017", "duration": 6, "progress": 0.2},
+            {"id": 4, "text": "Task #4", "start_date": "15-05-2017", "duration": 8, "progress": 0.5}
+          ]
+        },{
+          "projectName":"项目二",
+          "tasks": [
+            {"id": 5, "text": "Task #5", "start_date": "17-04-2017", "duration": 7, "progress": 0.2},
+            {"id": 6, "text": "Task #6", "start_date": "20-04-2017", "duration": 6, "progress": 0.7},
+            {"id": 7, "text": "Task #7", "start_date": "21-04-2017", "duration": 9, "progress": 0.6},
+            {"id": 8, "text": "Task #8", "start_date": "25-05-2017", "duration": 4, "progress": 0.4}
+          ]
+        }
+      ]
+    },
+    "message": "后台已处理"
+}

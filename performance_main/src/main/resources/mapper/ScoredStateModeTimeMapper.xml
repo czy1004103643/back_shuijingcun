@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.byd.performance_main.dao.ScoredStateModeTimeDao">
+    <sql id="BASE_TABLE">
+    tb_scored_state_mode_time
+  </sql>
+
+    <sql id="BASE_COLUMN">
+    id,
+    scoreTime,
+    isScored,
+    updateTime
+  </sql>
+
+    <insert id="insert" parameterType="com.byd.performance_main.model.ScoredStateModeTimeBean">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            scoreTime,
+            <if test="isScored != null">isScored,</if>
+        </trim>
+
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{scoreTime, jdbcType=VARCHAR},
+            <if test="isScored != null">#{isScored , jdbcType=INTEGER},</if>
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <update id="update" parameterType="com.byd.performance_main.model.ScoredStateModeTimeBean">
+        UPDATE
+        <include refid="BASE_TABLE"/>
+        SET
+        <trim suffixOverrides=",">
+            <if test="scoreTime  != null">scoreTime = #{scoreTime , jdbcType=VARCHAR},</if>
+            <if test="isScored  != null">isScored = #{isScored , jdbcType=INTEGER},</if>
+        </trim>
+        WHERE
+        id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryScoredStateModeTimeBeanFromScoredTime"
+            resultType="com.byd.performance_main.model.ScoredStateModeTimeBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        scoreTime = #{scoreTime, jdbcType=VARCHAR}
+    </select>
+
+    <select id="queryScoredStateModeTimeBeanFromIsScored"
+            resultType="com.byd.performance_main.model.ScoredStateModeTimeBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        isScored = #{isScored, jdbcType=INTEGER}
+    </select>
+
+    <select id="queryAllScoredStateModeTimeBean" resultType="com.byd.performance_main.model.ScoredStateModeTimeBean">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+    </select>
+
+</mapper>

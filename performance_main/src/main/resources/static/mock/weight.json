@@ -1,0 +1,21 @@
+{
+    "code":0,
+    "detail":{
+        "weightDetail":[{
+            "scoreName":"FO权重",
+            "SCOREING_MYSELF":30,
+            "leader_SCOREING":30,
+            "project_leader_SCOREING":40
+        },{
+            "scoreName":"FGL权重",
+            "SCOREING_MYSELF":30,
+            "leader_SCOREING":30,
+            "project_leader_SCOREING":30,
+            "member_SCOREING":10
+        },{
+            "scoreName":"项目管理/架构师权重",
+            "SCOREING_MYSELF":30,
+            "leader_SCOREING":70
+        }]
+    }
+}

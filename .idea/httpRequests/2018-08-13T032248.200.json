@@ -1,0 +1,9 @@
+{
+  "code": 0,
+  "detail": [
+    {
+      "add_group_member": true
+    }
+  ],
+  "message": "后台已处理: 小组成员添加成功"
+}
